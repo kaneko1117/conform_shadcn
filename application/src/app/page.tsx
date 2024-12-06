@@ -53,12 +53,10 @@ export default function Form() {
           name={fields.country.name}
           defaultValue={fields.country.initialValue}
           onValueChange={(value) => {
-            console.log(
-              form.update({
-                name: fields.country.name,
-                value,
-              })
-            );
+            form.update({
+              name: fields.country.name,
+              value,
+            });
           }}
         >
           <SelectTrigger>
